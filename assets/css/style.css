@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+header .header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 100%;
+    align-items: center;
+    margin: auto;
+
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a,
+.theme-btn {
+    padding: 0 5px;
+}
+
+header .theme-btn {
+    cursor: pointer;
+}
+
+/*HEADER BTN - ANCHOR STYLES*/
+
+header .header-container a {
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+header .header-container .theme-btn {
+    font-size: 20px;
+    border: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
