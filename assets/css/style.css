@@ -48,3 +48,25 @@ main {
     height: 100vh;
     align-items: center;
 }
+
+.dark-mode {
+    /*background-color: rgb(32, 38, 57);*/
+    background-color: #121212;
+    color: whitesmoke;
+
+}
+
+.dark-secondary {
+    background-color: #48444489;
+}
+
+/*LIGHT MODE THEMES*/
+
+.light-mode {
+    background-color: #dee4e7;
+    color: #222222;
+}
+
+.light-secondary {
+    background-color: #37474f6a;
+}

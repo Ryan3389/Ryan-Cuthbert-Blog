@@ -21,6 +21,28 @@
             </nav>
         </div>
     </header>
+    <main>
+        <section class="form-container dark-secondary">
+            <form id="form">
+                <h1>Welcome to my blog</h1>
+                <div class="input-container">
+                    <label for="userName">Username</label>
+                    <input type="text" id="userName" name="userName" required autocomplete="username">
+                </div>
+                <div class="input-container">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="input-container">
+                    <label for="blogContent">What's on your mind?</label>
+                    <textarea name="blogContent" id="blogContent" aria-label="blog content" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn" id="submit-btn">Submit</button>
+            </form>
+        </section>
+    </main>
+    <script src="assets/js/form.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
