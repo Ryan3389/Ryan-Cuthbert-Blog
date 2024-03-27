@@ -1,0 +1,39 @@
+form h1 {
+    text-align: center;
+}
+
+.form-container {
+    border: 1px solid black;
+    padding: 40px;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+.form-container .input-container input,
+textarea {
+    width: 100%;
+    padding: 5px;
+}
+
+.form-container .input-container {
+    margin: 5px;
+    padding: 5px;
+}
+
+
+.form-container form button.submit-btn {
+    background-color: #09090989;
+    color: whitesmoke;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    font-weight: bold;
+}
+
+.submit-btn {
+    cursor: pointer;
+}
