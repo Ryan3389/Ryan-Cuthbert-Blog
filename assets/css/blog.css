@@ -36,3 +36,72 @@ header .theme-btn {
 header a {
     text-decoration: none;
 }
+
+/*MAIN SECTION*/
+
+/*STYLES FOR THE BLOG POSTS*/
+
+.blog-container {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.blog-container .blog-post {
+    width: 90%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #000;
+    line-height: 1.4;
+}
+
+/*BLOG POST TYPOGRAPHY*/
+.blog-container p {
+    font-size: 18px;
+}
+
+.blog-container .blog-post h2,
+h3,
+p {
+    margin: 10px 0;
+}
+
+/*STYLES FOR P ELEMENT IF THERE AREN'T ANY POSTS RENDERED*/
+.message-para {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10%;
+}
+
+/*FOOTER*/
+footer {
+    text-align: center;
+    font-size: 20px;
+}
+
+/*DARK MODE THEMES*/
+.dark-mode {
+    background-color: #121212;
+    color: whitesmoke;
+
+}
+
+.dark-secondary {
+    background-color: #48444489;
+}
+
+/*LIGHT MODE THEMES*/
+
+.light-mode {
+    background-color: #dee4e7;
+    color: #222222;
+}
+
+.light-secondary {
+    background-color: #37474f6a;
+}
