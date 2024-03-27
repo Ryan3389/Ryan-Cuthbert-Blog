@@ -11,20 +11,34 @@ const messagePara = document.getElementById('message-para')
 
 themeBtn.addEventListener("click", function (e) {
     setTheme(e);
+
 });
 
 function setTheme(e) {
     //adding/removing light theme classes to change the app theme
-    const newPosts = renderBlogPosts();
-    bodyEl.classList.toggle('light-mode')
-    themeBtn.classList.toggle('light-mode')
-    //this loop changes the theme for each blog post
-    for (let i = 0; i < newPosts.length; i++) {
-        newPosts[i].classList.toggle('light-secondary')
-    }
-    //this loop changes the theme for each anchor element in the app
-    for (let i = 0; i < anchorEl.length; i++) {
-        anchorEl[i].classList.toggle('light-mode')
+    //if renderBlogPost function renders undefined, change theme for already created elements
+    if (renderBlogPosts() === undefined) {
+        bodyEl.classList.toggle('light-mode')
+        themeBtn.classList.toggle('light-mode')
+        for (let i = 0; i < anchorEl.length; i++) {
+            anchorEl[i].classList.toggle('light-mode')
+
+        }
+        //if renderBlogPost is not undefined, change theme for everything
+        //This avoids newPosts variable from rendering undefined 
+    } else {
+        const newPosts = renderBlogPosts();
+        bodyEl.classList.toggle('light-mode')
+        themeBtn.classList.toggle('light-mode')
+        //this loop changes the theme for each blog post
+        for (let i = 0; i < newPosts.length; i++) {
+            newPosts[i].classList.toggle('light-secondary')
+        }
+        //this loop changes the theme for each anchor element in the app
+        for (let i = 0; i < anchorEl.length; i++) {
+            anchorEl[i].classList.toggle('light-mode')
+
+        }
     }
 }
 

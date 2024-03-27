@@ -11,25 +11,23 @@ submitBtn.addEventListener('click', function (e) {
 })
 
 function saveBlogInfo(e) {
+    //Prevent form defult behaviour
     e.preventDefault()
-    //checking if any input field is empty
+    //Checking if any form input is empty
     if (usernameInput.value === '' || titleInput.value === '' || blogContentInput.value === '') {
         alert("Please fill in all input fields")
     } else {
-        //re assigning to userInfo what ever is in local storage, to avoid it resetting after each submission
-        userInfo = JSON.parse(localStorage.getItem('userInfo')) || []
-
-        //object containing user data to push into userInfo array
-        const blogDataObj = {
+        //getting data previously stored in local storage to avoid it resetting after each submission
+        userInfo = JSON.parse(localStorage.getItem("userInfo")) || []
+        //pushing the user data currently entered into the usersInfo array
+        userInfo.push({
             username: usernameInput.value,
             title: titleInput.value,
             content: blogContentInput.value
-        }
-        userInfo.push(blogDataObj)
-        localStorage.setItem('userInfo', JSON.stringify(userInfo))
-
-        //when button is clicked, the user is redirected to blog.html
+        })
+        //setting this new data into local storage
+        localStorage.setItem("userInfo", JSON.stringify(userInfo))
+        //This is responsible for directing the user to blog.html 
         window.location.href = 'blog.html'
-
     }
 }
