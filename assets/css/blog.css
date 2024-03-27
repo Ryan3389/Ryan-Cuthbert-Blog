@@ -1,0 +1,38 @@
+/*CSS RESET*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    min-height: 100vh;
+}
+
+/*HEADER STYLES*/
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 81%;
+    margin: auto;
+}
+
+/*HEADER BUTTONS STYLES - HOME + THEME BTNS*/
+
+header .theme-btn,
+a {
+    font-size: 20px;
+    border: none;
+    margin: 7px 5px
+}
+
+header .theme-btn {
+    cursor: pointer;
+}
+
+header a {
+    text-decoration: none;
+}
