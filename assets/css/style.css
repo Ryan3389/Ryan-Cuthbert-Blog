@@ -1,3 +1,4 @@
+/*CSS RESET*/
 * {
     padding: 0;
     margin: 0;
@@ -5,7 +6,7 @@
 }
 
 
-
+/*HEADER STYLES*/
 header .header-container {
     display: flex;
     justify-content: space-between;
@@ -16,6 +17,7 @@ header .header-container {
 
 }
 
+/*HEADER -navbar styles*/
 header nav {
     display: flex;
 }
@@ -49,8 +51,8 @@ main {
     align-items: center;
 }
 
+/*DARK MODE*/
 .dark-mode {
-    /*background-color: rgb(32, 38, 57);*/
     background-color: #121212;
     color: whitesmoke;
 

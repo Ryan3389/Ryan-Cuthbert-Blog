@@ -4,14 +4,13 @@ const sectionEl = document.querySelector('section')
 const anchorEl = document.querySelectorAll('a')
 
 
-
 themeBtn.addEventListener('click', function (e) {
     setTheme(e)
 })
 
 
 
-
+//changes theme of web page
 function setTheme(e) {
     bodyEl.classList.toggle('light-mode')
     sectionEl.classList.toggle("light-secondary")

@@ -70,7 +70,7 @@ function renderBlogPosts() {
     }
 }
 
-console.log(renderBlogPosts())
+renderBlogPosts()
 
 
 
